@@ -128,6 +128,7 @@ header {
 .usluge {
     padding: 6rem 2rem;
 }
+
 .usluga img {
     width: 100%;
     max-width: 500px;
@@ -243,7 +244,8 @@ header {
     margin-top: 2rem;
 }
 
-.prev-btn, .next-btn {
+.prev-btn,
+.next-btn {
     background: none;
     border: none;
     color: var(--light);
@@ -253,7 +255,8 @@ header {
     transition: color 0.3s;
 }
 
-.prev-btn:hover, .next-btn:hover {
+.prev-btn:hover,
+.next-btn:hover {
     color: var(--gold);
 }
 
@@ -535,7 +538,8 @@ footer {
     .katalog-container {
         padding: 0 2rem;
     }
-} 
+}
+
 .usluga img {
     width: 100%;
     height: auto;
@@ -544,6 +548,7 @@ footer {
     border-radius: 12px;
     display: block;
 }
+
 @media (max-width: 768px) {
     .usluga img {
         width: 100%;
@@ -552,8 +557,44 @@ footer {
         max-height: 250px;
     }
 }
+
 @media (max-width: 500px) {
     .usluga img {
         height: 220px;
     }
+}
+
+#fake-cookie-msg {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #111;
+    color: #fff;
+    padding: 20px 20px 15px 20px;
+    border-radius: 10px;
+    z-index: 9999;
+    font-size: 14px;
+    max-width: 320px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.6s ease;
+}
+
+#fake-cookie-msg.show {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#fake-cookie-msg button {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
 }

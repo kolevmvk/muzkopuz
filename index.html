@@ -244,13 +244,15 @@
         </div>
     </section>
     <div id="fake-cookie-msg"
-        style="display:none;position:fixed;bottom:20px;right:20px;background:#111;color:#fff;padding:20px 20px 15px 20px;border-radius:10px;z-index:9999;font-size:14px;max-width:320px;box-shadow:0 0 10px rgba(0,0,0,0.5);">
+        style="display:none;position:fixed;bottom:20px;right:10px;background:#111;color:#fff;padding:20px 20px 15px 20px;border-radius:10px;z-index:9999;font-size:14px;max-width:320px;box-shadow:0 0 10px rgba(0,0,0,0.5);">
         <button onclick="document.getElementById('fake-cookie-msg').style.display='none'"
-            style="position:absolute;top:5px;right:10px;background:none;border:none;color:#fff;font-size:18px;cursor:pointer;">×</button>
+            style="position:absolute;top:5px;right:10px;background:none;border:none;color:#fff;font-size:20px;cursor:pointer;">×</button>
         <p>
-            Hvala što ste podelili sve informacije iz vašeg pretraživača.<br><br>
-            Istorija pretrage, otvoreni tabovi i lični podaci su uspešno očitani.<br>
-            <strong>Vaši podaci su sigurni sa nama.</strong>
+            Hvala što ste podelili sve informacije iz vašeg pretraživača.<br><strong> pretrage, otvoreni tabovi i lični podaci su 
+                uspešno očitani.</strong><br>
+                <br>
+                <br>
+            <strong>Vaši podaci su sigurni sa nama!</strong>
         </p>
     </div>
 
@@ -275,8 +277,9 @@
     <script>
         setTimeout(() => {
             document.getElementById("fake-cookie-msg").style.display = "block";
-        }, 5000);
+        }, 3000);
     </script>
+
 
 
 </body>
