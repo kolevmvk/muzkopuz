@@ -1,0 +1,175 @@
+/* Katalog sekcija */
+.katalog-section {
+    padding: 100px 0;
+    background: #000;
+    position: relative;
+    overflow: hidden;
+}
+
+.katalog-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.katalog-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.katalog-title {
+    font-size: 3rem;
+    color: #fff;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.katalog-subtitle {
+    font-size: 1.2rem;
+    color: #D4AF37;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.katalog-slider {
+    position: relative;
+    overflow: hidden;
+    padding: 20px 0;
+}
+
+.katalog-track {
+    display: flex;
+    transition: transform 0.5s ease;
+    gap: 32px;
+}
+
+.katalog-card {
+    flex: 0 0 calc(33.333% - 32px);
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+    padding: 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.katalog-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(212, 175, 55, 0.1);
+}
+
+.katalog-card-image {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    object-fit: cover;
+}
+
+.katalog-card-title {
+    font-size: 1.5rem;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.katalog-card-description {
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.katalog-card-price {
+    font-size: 1.8rem;
+    color: #D4AF37;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.katalog-card-button {
+    display: inline-block;
+    padding: 12px 30px;
+    background: #D4AF37;
+    color: #000;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.katalog-card-button:hover {
+    background: #fff;
+    transform: scale(1.05);
+}
+
+.katalog-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    gap: 20px;
+}
+
+.katalog-prev,
+.katalog-next {
+    background: none;
+    border: 2px solid #D4AF37;
+    color: #D4AF37;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.katalog-prev:hover,
+.katalog-next:hover {
+    background: #D4AF37;
+    color: #000;
+}
+
+.katalog-dots {
+    display: flex;
+    gap: 10px;
+}
+
+.katalog-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.katalog-dot.active {
+    background: #D4AF37;
+    transform: scale(1.2);
+}
+
+/* Responsive dizajn za katalog */
+@media (max-width: 768px) {
+    .katalog-card {
+        flex: 0 0 100%;
+    }
+    
+    .katalog-title {
+        font-size: 2rem;
+    }
+    
+    .katalog-subtitle {
+        font-size: 1rem;
+    }
+    
+    .katalog-card-image {
+        height: 180px;
+    }
+    
+    .katalog-card-title {
+        font-size: 1.3rem;
+    }
+    
+    .katalog-card-price {
+        font-size: 1.5rem;
+    }
+} 
