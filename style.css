@@ -543,3 +543,8 @@ footer {
         max-height: 250px;
     }
 }
+@media (max-width: 500px) {
+    .usluga img {
+        height: 220px;
+    }
+}
