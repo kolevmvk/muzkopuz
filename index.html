@@ -243,18 +243,14 @@
             </div>
         </div>
     </section>
-    <div id="fake-cookie-msg"
-        style="display:none;position:fixed;bottom:20px;right:10px;background:#111;color:#fff;padding:20px 20px 15px 20px;border-radius:10px;z-index:9999;font-size:14px;max-width:320px;box-shadow:0 0 10px rgba(0,0,0,0.5);">
-        <button onclick="document.getElementById('fake-cookie-msg').style.display='none'"
-            style="position:absolute;top:5px;right:10px;background:none;border:none;color:#fff;font-size:20px;cursor:pointer;">×</button>
+    <div id="fake-cookie-msg">
+        <button onclick="document.getElementById('fake-cookie-msg').style.visibility='hidden';document.getElementById('fake-cookie-msg').style.opacity='0';">×</button>
         <p>
-            Hvala što ste podelili sve informacije iz vašeg pretraživača.<br><strong> pretrage, otvoreni tabovi i lični podaci su 
-                uspešno očitani.</strong><br>
-                <br>
-                <br>
-            <strong>Vaši podaci su sigurni sa nama!</strong>
+          Hvala što ste podelili sve informacije iz vašeg pretraživača.<br>
+          <strong>Pretrage, otvoreni tabovi i lični podaci su uspešno očitani.</strong><br><br>
+          <strong>Vaši podaci su sigurni sa nama!</strong>
         </p>
-    </div>
+      </div>
 
     <!-- Footer -->
     <footer id="kontakt">
@@ -276,9 +272,10 @@
 
     <script>
         setTimeout(() => {
-            document.getElementById("fake-cookie-msg").style.display = "block";
+          const popup = document.getElementById("fake-cookie-msg");
+          popup.classList.add("show");
         }, 3000);
-    </script>
+      </script>
 
 
 

@@ -565,7 +565,6 @@ footer {
 }
 
 #fake-cookie-msg {
-    display: none;
     position: fixed;
     bottom: 20px;
     right: 20px;
@@ -577,24 +576,25 @@ footer {
     font-size: 14px;
     max-width: 320px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    visibility: hidden;
     opacity: 0;
     transform: translateY(20px);
-    transition: all 0.6s ease;
-}
+    transition: all 0.5s ease;
+  }
 
-#fake-cookie-msg.show {
-    display: block;
+  #fake-cookie-msg.show {
+    visibility: visible;
     opacity: 1;
     transform: translateY(0);
-}
+  }
 
-#fake-cookie-msg button {
+  #fake-cookie-msg button {
     position: absolute;
     top: 5px;
     right: 10px;
     background: none;
     border: none;
     color: #fff;
-    font-size: 18px;
+    font-size: 20px;
     cursor: pointer;
-}
+  }
