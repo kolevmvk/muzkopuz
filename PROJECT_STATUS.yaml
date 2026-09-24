@@ -1,0 +1,43 @@
+# Declared status, not verified release readiness.
+# stage: prototype is provisional: no formal lifecycle stage is declared.
+# Empty modules/risks/debt lists mean no supported entries recorded, not absence.
+# updated.at_commit references inspected HEAD before the status commit; approved template convention.
+schema_version: 1
+project:
+  id: muzkopuz
+  name: Muž na dan
+  repo: kolevmvk/muzkopuz
+  kind: web
+  stage: prototype
+updated:
+  at: "2026-09-24T11:35:29Z"
+  by: codex
+  at_commit: "c6a177dec86dfde7e2a2aa2e2765825b292a3110"
+summary: Static website whose index.html title is Muž na dan. Checkout includes image assets, script.js
+  and CSS files. No README or package manifest is present; runtime behavior and deployment state are unverified.
+modules: []
+risks: []
+blockers: []
+technical_debt: []
+pending_verification:
+- id: V1
+  claim: The documented checks or repository-specific acceptance review have been completed.
+  module: null
+  how: Serve index.html locally and check navigation, images and browser interactions.
+  status: not_run
+  evidence: null
+next_actions: []
+release:
+  target_version: null
+  checklist:
+  - id: RC1
+    title: Release acceptance and intended deployment or repository handoff verified by the owner.
+    status: not_run
+    evidence: null
+agents:
+  last_session:
+    agent: codex
+    at: "2026-09-24T11:35:29Z"
+    summary: Added a source-grounded Control Center status snapshot. Functional and release checks were
+      not run.
+    commits: 1
